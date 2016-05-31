@@ -1,0 +1,32 @@
+{
+  "owners": [
+    "DKFPAw1tKMCQcuy5WDO6ug",
+    "svBi-FFZiMepj02zaNfDNQ"
+  ],
+  "whitelists": [
+    {
+        "on": false,
+        "id": "UCa8DLddod6a3JdIDao_RlvQ"
+    },
+    {
+        "on": false,
+        "id": "UCjzy51NOOghn752bVSb0X3A"
+    },
+    {
+        "on": true,
+        "id": "UCO7QgNpEr_ug25Y58FwtSfg"
+    },
+    {
+        "on": false,
+        "id": "UCFsmQxG_-6BvaBnpXBqxfPA"
+    },
+    {
+        "on": true,
+        "id": "UCeDAMjAoztnS1WYGLzB2P_w"
+    },
+    {
+        "on": true,
+        "id": "UCCkMW93Am1pLfk2nZFKAmbQ"
+    }
+  ]
+}

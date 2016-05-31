@@ -1,0 +1,21 @@
+{
+  "name": "youtube-whitelist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --timeout 60000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.0-rc.5",
+    "googleapis": "git+https://github.com/yx2zhang/google-api-nodejs-client.git"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}
