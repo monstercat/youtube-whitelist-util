@@ -1,1 +1,4 @@
 .DS_Store
+test/keys.json
+node_modules
+*.log

@@ -9,13 +9,17 @@
   "scripts": {
     "test": "mocha --reporter spec --timeout 60000"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monstercat/youtube-whitelist-util"
+  },
   "author": "Thomas Mathews",
   "license": "ISC",
   "dependencies": {
     "async": "^2.1.5"
   },
   "devDependencies": {
-    "googleapis": "^16.1.0",
+    "googleapis": "git+git@github.com:monstercat/google-api-nodejs-client.git",
     "mocha": "^2.5.3"
   }
 }
