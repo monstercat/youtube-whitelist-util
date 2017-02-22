@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "googleapis": "git+git@github.com:monstercat/google-api-nodejs-client.git",
-    "mocha": "^2.5.3"
+    "mocha": "^3.2.0"
   }
 }
