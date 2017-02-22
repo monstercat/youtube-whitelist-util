@@ -1,7 +1,7 @@
 {
   "name": "youtube-whitelist",
   "version": "1.0.0",
-  "description": "",
+  "description": "Wrapper library for whitelisting YouTube API.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -9,13 +9,13 @@
   "scripts": {
     "test": "mocha --reporter spec --timeout 60000"
   },
-  "author": "",
+  "author": "Thomas Mathews",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.0.0-rc.5",
-    "googleapis": "git+https://github.com/yx2zhang/google-api-nodejs-client.git"
+    "async": "^2.1.5"
   },
   "devDependencies": {
+    "googleapis": "^16.1.0",
     "mocha": "^2.5.3"
   }
 }

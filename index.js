@@ -51,6 +51,8 @@ function getApi (opts, done) {
   jwt.authorize(function (err, tokens) {
     if (err) return done(err)
     google.options({auth: jwt})
+    Object.keys(google).forEach((key)=> console.log(key))
+    console.log(Object.keys(google.youtube))
     done(null, google.youtubePartner('v1'))
   })
 }
