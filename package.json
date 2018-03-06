@@ -1,6 +1,6 @@
 {
   "name": "youtube-whitelist",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Wrapper library for whitelisting YouTube API.",
   "main": "index.js",
   "directories": {
@@ -16,10 +16,10 @@
   "author": "Thomas Mathews",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.1.5"
+    "async": "^2.1.5",
+    "googleapis": "https://github.com/monstercat/googleapis.git"
   },
   "devDependencies": {
-    "googleapis": "git+git@github.com:monstercat/google-api-nodejs-client.git",
     "mocha": "^3.2.0"
   }
 }

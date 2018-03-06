@@ -46,7 +46,8 @@ function getApi (opts, done) {
     "https://www.googleapis.com/auth/youtubepartner",
   ]
   var keys = opts.keys
-  var google = require('googleapis')
+  var { google } = require('googleapis')
+
   var jwt = new google.auth.JWT(keys.client_email, null, keys.private_key, scopes, null)
   jwt.authorize(function (err, tokens) {
     if (err) return done(err)
