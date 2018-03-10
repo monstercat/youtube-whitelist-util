@@ -57,6 +57,29 @@ function getApi (opts, done) {
 }
 
 /**
+ * @desc Returns the full whitelist of channels from YouTube
+ *
+ * @param {string} owner
+ * @param {object} opts
+ * @param {object} opts.api Result of getApi call
+ * @param {string} opts.pageToken For getting the next page of results
+ * @param {callback} done
+ * @return {undefined}
+ */
+function getWhitelist (owner, opts, done) {
+  if (!opts.api) return done(Error('Api not supplied.'))
+  opts.api.whitelists.list({
+    onBehalfOfContentOwner: owner,
+    pageToken: opts.pageToken
+  }, (err, result) => {
+    if (err) {
+      return done(err)
+    }
+    done(null, result.data)
+  })
+}
+
+/**
   * handleMany
   *
   * @desc Uses handleOne to handle many.
@@ -114,5 +137,6 @@ function handleOne (whitelist, opts, done) {
 module.exports = {
   handleMany: handleMany,
   handleOne: handleOne,
-  getApi: getApi
+  getApi: getApi,
+  getWhitelist: getWhitelist
 }
