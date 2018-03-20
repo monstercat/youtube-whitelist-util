@@ -11,7 +11,13 @@ function isOnList (whitelist, opts, done) {
     onBehalfOfContentOwner: whitelist.owner
   }, function (err, obj) {
     if (err && err.code != 404) return done(err)
-    done(null, !!obj)
+    let onList = true
+
+    if (obj.data && obj.data.error && obj.data.error.code == 404) {
+      onList = false
+    }
+
+    done(null, onList)
   })
 }
 
